@@ -5,8 +5,10 @@ import { BioLayout } from './pages/BioLayout';
 import { ContactLayout } from './pages/ContactLayout';
 import { ProjectLayout } from './pages/ProjectLayout';
 import { BookLayout } from './pages/BookLayout';
+import ReactGA from 'react-ga';
 
-function App() {
+  function App() {
+  ReactGA.initialize('UA-87907665-2');
   return (
     <div className="App">
       <BrowserRouter>

@@ -52,13 +52,6 @@ body {
   grid-gap: 25px 50px;
 }
 
-.contact {
-  display: grid;
-  margin-left: auto;
-  margin-right: auto;
-  grid-template-areas: 'title .' 'contact-content control' ;
-  grid-gap: 10px;
-}
 
 @media screen and (max-width: 720px) {
   .core-layout {

@@ -21,7 +21,7 @@ body {
 }
 
 .headshot {
-  width: calc(100% - 50px);
+  width: calc(100% - 20px);
   border-radius: var(--border-width);
   border-color: var(--highlight-color);
   border-style: solid;
@@ -43,20 +43,15 @@ body {
 .core-layout {
   display: grid;
   width: 700px;
+  min-height: 100vh;
   margin-left: auto;
   margin-right: auto;
-  grid-template-areas: 'title .' 'content control' ;
+  grid-template-areas: 'title .' 'content control' 'footer .';
+  grid-template-rows: 65px auto 25px;
   grid-template-columns: 500px 150px; 
   grid-gap: 25px 50px;
 }
 
-.contact {
-  display: grid;
-  margin-left: auto;
-  margin-right: auto;
-  grid-template-areas: 'title .' 'contact-content control' ;
-  grid-gap: 10px;
-}
 
 @media screen and (max-width: 720px) {
   .core-layout {
@@ -70,6 +65,13 @@ body {
   grid-area: content;
 }
 
+
+.footer {
+  grid-area: footer;
+  text-align: center;
+}
+
+
 .bio-content p {
   margin: 25px;
   font-size: 1.25em;
@@ -81,7 +83,7 @@ body {
 .control{
   grid-area: control;
 }
-contact-content{
+.contact-content{
   grid-area: contact-content;
 }
 .navigation, .social, .contact-details {

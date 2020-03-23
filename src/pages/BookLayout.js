@@ -9,7 +9,7 @@ export class BookLayout extends React.Component {
     ReactGA.pageview(window.location.pathname + window.location.search);
     return <div className='core-layout'>
       <Title></Title>
-      <Navigation></Navigation>
+      <Navigation contacts={this.props.contacts}></Navigation>
       <Footer></Footer>
     </div>;
   }

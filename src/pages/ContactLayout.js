@@ -12,7 +12,7 @@ export class ContactLayout extends React.Component {
     return <div className='core-layout'>
       <Title></Title>
       <Navigation social={false}></Navigation>
-      <ContactContent styleName='content'></ContactContent>
+      <ContactContent styleName='content' contacts={this.props.contacts}></ContactContent>
       <Footer></Footer>
     </div>;
   }

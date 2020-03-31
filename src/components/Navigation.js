@@ -5,6 +5,7 @@ import { ContactIcons } from "./ContactIcons";
 
 export class Navigation extends React.Component {
   render() {
+    console.log(this.props.contacts);
     return (
       <div className={this.props.styleName}>
         <ul className='navigation'>
@@ -14,7 +15,7 @@ export class Navigation extends React.Component {
           <li><Link to='/books'>Books I Love</Link></li>
         </ul>
         {this.props.social &&
-          <ContactIcons></ContactIcons>
+          <ContactIcons contacts={this.props.contacts}></ContactIcons>
         }
       </div>
     )

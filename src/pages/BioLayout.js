@@ -7,10 +7,11 @@ import ReactGA from 'react-ga';
 import { Footer } from "../components/Footer";
 export class BioLayout extends React.Component {
   render() {
+    console.log(this.props.contacts);
     ReactGA.pageview(window.location.pathname + window.location.search);
     return <div className='core-layout'>
       <Title></Title>
-      <Navigation></Navigation>
+      <Navigation contacts={this.props.contacts}></Navigation>
       <BioContent styleName='content'></BioContent>
       <Footer></Footer>
     </div>;

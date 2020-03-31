@@ -1,9 +1,9 @@
 import React from "react";
-import { ContactDetails } from "../components/ContactDetails";
+import { ContactDetails } from "./ContactDetails";
 
 export class ContactContent extends React.Component {
     render() {
-        return <ContactDetails styleName={this.props.styleName}></ContactDetails>;
+        return <ContactDetails contacts={this.props.contacts} styleName={this.props.styleName}></ContactDetails>;
     }
 }
 ContactContent.defaultProps = {
